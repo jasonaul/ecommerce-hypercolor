@@ -1,0 +1,14 @@
+.image-break {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Mobile Styles */
+  @media only screen and (max-width: 600px) {
+    .image-break {
+      height: 100px;
+    }
+  }
+  

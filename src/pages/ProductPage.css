@@ -1,0 +1,50 @@
+.product-page {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .product-images {
+    flex: 1;
+  }
+  
+  .product-image-large {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .product-thumbnails {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+  }
+  
+  .product-thumbnail {
+    width: 20%;
+    cursor: pointer;
+  }
+  
+  .product-info {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  button {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .product-page {
+      flex-direction: column;
+    }
+  
+    .product-info {
+      padding-left: 0;
+    }
+  }
+  

@@ -1,0 +1,43 @@
+.clothing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .clothing-item {
+    border: 1px solid #eee;
+    padding: 1rem;
+  }
+  
+  .clothing-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .clothing-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .clothing-image img:first-child {
+    opacity: 1;
+  }
+  
+  .clothing-image img:last-child {
+    opacity: 0;
+  }
+  
+  .clothing-image:hover img:first-child {
+    opacity: 0;
+  }
+  
+  .clothing-image:hover img:last-child {
+    opacity: 1;
+  }
+  

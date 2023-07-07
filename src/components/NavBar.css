@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease-in-out;
+    z-index: 2; /* Add this */
+  }
+  
+  .navbar:hover {
+    background-color: white;
+  }
+  
+  .navbar:hover * {
+    color: black;
+  }
+  
+  .navbar-section {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+  
+  .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Font Awesome Icons */
+  .fab,
+  .fas {
+    color: white;
+    margin-left: 20px;
+  }
+  
+  /* Mobile Styles */
+  @media only screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .navbar-section {
+      margin: 10px 0;
+    }
+  
+    .logo {
+      font-size: 1.5em;
+    }
+  }
+  
